@@ -10,13 +10,9 @@ body{
     align-items: center;
     height: 100vh;
     justify-content: center;
-   /* background-image: url("th.jpeg");
-   background: linear-gradient(rgb(208, 57, 82), rgb(48, 105, 146)); 
-   background: repeating-linear-gradient(blue,yellow);
-   background: radial-gradient(ellipse at top, red, transparent),
-   radial-gradient(ellipse at bottom, rgb(14, 85, 216), transparent);*/
+
    background: radial-gradient(circle at 100%,#333,#333 50%,#eee 75%,#333 75%);
-   /* background: radial-gradient(black,grey,rgb(249, 236, 236),grey);*/
+   
    
 }
 h1{
