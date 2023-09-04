@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+   /* background-image: url("th.jpeg");
+   background: linear-gradient(rgb(208, 57, 82), rgb(48, 105, 146)); 
+   background: repeating-linear-gradient(blue,yellow);
+   background: radial-gradient(ellipse at top, red, transparent),
+   radial-gradient(ellipse at bottom, rgb(14, 85, 216), transparent);*/
+   background: radial-gradient(circle at 100%,#333,#333 50%,#eee 75%,#333 75%);
+   /* background: radial-gradient(black,grey,rgb(249, 236, 236),grey);*/
+   
+}
+h1{
+    
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    text-shadow: 0.9px .09px   white;
+    
+}
+
+.year{
+      font-size: 5em;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: white;
+      text-shadow: 2px 2px 1px black;
+}
+.countdown{
+    display: flex;
+    margin: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;   
+    box-shadow: 2px 2px 7px  white;
+    border-radius: 30px;
+}
+
+.countdown div{
+   margin: 0 15px;
+   font-size: 2.5em;
+   font-weight: 500;
+   margin-top: -25px;
+   position: relative;
+   text-align: center;
+   width: 100px;
+}
+.countdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -69%;
+    font-size: .35em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+    left: 0;
+    
+}
+.countdown #day::before{
+    content: "days";
+}
+.countdown #hour::before{
+    content: "hours";
+}
+.countdown #minute::before{
+    content: "minutes";
+}
+.countdown #second::before{
+    content: "seconds";
+}
